@@ -96,6 +96,8 @@ public class UIJCRExplorerPortlet extends UIPortletApplication {
 
   private boolean flagSelect = false;
 
+  private boolean isNotification = false;
+
   public UIJCRExplorerPortlet() throws Exception {
     if (Util.getPortalRequestContext().getRemoteUser() != null) {
       UIJcrExplorerContainer explorerContainer = addChild(UIJcrExplorerContainer.class, null, null);
@@ -139,18 +141,22 @@ public class UIJCRExplorerPortlet extends UIPortletApplication {
         context.getApplicationResourceBundle().getString("UIJCRExplorerPortlet.msg.anonymous-access-denied")));
       return;
     }
-    
+
     UIJcrExplorerContainer explorerContainer = getChild(UIJcrExplorerContainer.class);
     UIJcrExplorerEditContainer editContainer = getChild(UIJcrExplorerEditContainer.class);
     PortletRequestContext portletReqContext = (PortletRequestContext) context ;
     HashMap<String, String> map = getElementByContext(context);
     PortalRequestContext pcontext = Util.getPortalRequestContext();
     String backToValue = Util.getPortalRequestContext().getRequestParameter(org.exoplatform.ecm.webui.utils.Utils.URL_BACKTO);
-    
+
     if (!portletReqContext.useAjax()) {
         backTo = backToValue;
     }
     HashMap<String, String> changeDrive = (HashMap<String, String>)pcontext.getAttribute("jcrexplorer-show-document");
+    String notification = pcontext.getRequest().getParameter("notification");
+    if (notification != null && notification.equals("true")) {
+      isNotification = true;
+    }
     if (changeDrive!=null) {
       map = changeDrive;
       context.setAttribute("jcrexplorer-show-document", null);
@@ -195,8 +201,8 @@ public class UIJCRExplorerPortlet extends UIPortletApplication {
     AutoVersionService autoVersionService = WCMCoreUtils.getService(AutoVersionService.class);
     context.getJavascriptManager().
     require("SHARED/multiUpload", "multiUpload").require("SHARED/jquery", "gj")
-      .addScripts("multiUpload.setLocation('" + 
-               uiExplorer.getWorkspaceName()  + "','" + 
+      .addScripts("multiUpload.setLocation('" +
+               uiExplorer.getWorkspaceName()  + "','" +
                uiExplorer.getDriveData().getName()  + "','" +
                uiTreeExplorer.getLabel()  + "','" +
                uiExplorer.getCurrentPath() + "','" +
@@ -238,7 +244,7 @@ public class UIJCRExplorerPortlet extends UIPortletApplication {
     PortletRequestContext pcontext = (PortletRequestContext)WebuiRequestContext.getCurrentInstance();
     return pcontext.getRequest().getPreferences();
   }
-  
+
   public DriveData getUserDrive() throws Exception {
     ManageDriveService manageDriveService = getApplicationComponent(ManageDriveService.class);
     String userId = Util.getPortalRequestContext().getRemoteUser();
@@ -248,8 +254,8 @@ public class UIJCRExplorerPortlet extends UIPortletApplication {
       }
     }
     return null;
-  }  
-  
+  }
+
   public boolean canUseConfigDrive(String driveName) throws Exception {
     ManageDriveService dservice = getApplicationComponent(ManageDriveService.class);
     String userId = Util.getPortalRequestContext().getRemoteUser();
@@ -287,7 +293,7 @@ public class UIJCRExplorerPortlet extends UIPortletApplication {
         mapParam.put("drive", matcher.group(1));
         mapParam.put("path", matcher.group(2));
         return mapParam;
-      } 
+      }
       patternUrl = Pattern.compile("(.*)");
       matcher = patternUrl.matcher(nodePathParam);
       if (matcher.find()) {
@@ -335,6 +341,9 @@ public class UIJCRExplorerPortlet extends UIPortletApplication {
     String userId = Util.getPortalRequestContext().getRemoteUser();
     List<String> viewList = new ArrayList<String>();
 
+    if (isNotification) {
+      driveData.setViews(driveData.getViews() + ", List");
+    }
     for (String role : Utils.getMemberships()) {
       for (String viewName : driveData.getViews().split(",")) {
         if (!viewList.contains(viewName.trim())) {
