@@ -1346,6 +1346,8 @@
   -->
   <UIVersionInfo>
     <tooltip>
+      <version>Versija</version>
+      <baseVersion>Bazinė versija</baseVersion>
       <addLabel>Pridėti etiketę</addLabel>
       <removeLable>Pašalinti etiketę</removeLable>
       <restoreVersion>Atkurti versiją</restoreVersion>
