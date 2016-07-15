@@ -178,7 +178,7 @@
   #########################################################################################
   -->
   <UIAllItemsPreferenceForm>
-    <title>Nastavi nastavitve filtra</title>
+    <title>Nastavitve filtra</title>
     <action>
       <Cancel>#{word.cancel}</Cancel>
       <Save>#{word.save}</Save>
@@ -655,7 +655,7 @@
       <UIActionContainer>Dodaj dejanje</UIActionContainer>
       <UIActionViewContainer>Informacije o dejanju</UIActionViewContainer>
       <UIMultiLanguageForm>Ogled jezika</UIMultiLanguageForm>
-      <UIAddLanguageContainer>Dodajte jezik</UIAddLanguageContainer>
+      <UIAddLanguageContainer>Dodaj jezik</UIAddLanguageContainer>
       <UINonPublishedForm>Stanje</UINonPublishedForm>
       <UIPublishedForm>Stanje</UIPublishedForm>
       <UIPublicationLogList>Zgodovina</UIPublicationLogList>
@@ -1346,6 +1346,8 @@
   -->
   <UIVersionInfo>
     <tooltip>
+      <version>Različica</version>
+      <baseVersion>Osnovna različica</baseVersion>
       <addLabel>Dodaj oznako</addLabel>
       <removeLable>Odstrani oznako</removeLable>
       <restoreVersion>Obnovi različico</restoreVersion>
@@ -2438,7 +2440,7 @@
 <ReadOnly>Odpri samo za branje</ReadOnly>
 <Cancel>Prekliči</Cancel>
       <KeepBoth>Zadrži oboje</KeepBoth>
-      <CreateNewVersion>Ustvarite novo različico</CreateNewVersion>
+      <CreateNewVersion>Ustvari novo različico</CreateNewVersion>
     </label>
   </UIConfirmMessage>
 
@@ -2698,7 +2700,7 @@
   <UIAllItemsByType>
     <label>
     <ByType>Filtriranje po vrsti</ByType>
-      <DocumentFilterConfiguration>Nastavitve nastavitve filtra</DocumentFilterConfiguration>
+      <DocumentFilterConfiguration>Nastavitve filtra</DocumentFilterConfiguration>
     </label>
     <title>
       <ShowVideo>Prikaži vse videe</ShowVideo>
@@ -3080,7 +3082,7 @@
       <ShowDrives>Pokaži pogone</ShowDrives>
     </DrivesArea>
     <msg>
-      <no-view-found>Ni nastavljenih pogledov za vaše za dovoljenje za dostop v pogonu "{0}".</no-view-found>
+      <no-view-found>Vaše dovoljenje za dostop nima nastavljenih pogledov za pogon "{0}".</no-view-found>
       <access-denied>Dostop zavrnjen. Morda nimate dovoljenja v delovnem prostoru pogona "{0}".</access-denied>
       <empty-drives>Dostop zavrnjen. V skladišču bodisi ni nobenega pogona ali pa nimate dovoljenja za dostop do pogonov v skladišču.</empty-drives>
       <workspace-not-exist>Pogon "{0}" je bil shranjen v neprepoznan delovni prostor. Prosimo popravite ta pogon.</workspace-not-exist>
@@ -3096,7 +3098,7 @@
   <msg>
   <confirm-close>Če zaprete ta obrazec, boste izgubili spremembe.</confirm-close>
   <confirm-changeType>Če spremenite vrsto vsebine, boste izgubili spremembe.</confirm-changeType>
-  <confirm-navigate>Če ste zapustiti to stran, boste izgubili spremembe.</confirm-navigate>
+  <confirm-navigate>Če boste zapustili to stran, boste izgubili spremembe.</confirm-navigate>
   </msg>
   </UIDocumentForm>
   <UploadFileMimeTypesValidator>
@@ -3180,8 +3182,8 @@
   <label>
   <CreatedOn>Ustvarjeno dne</CreatedOn>
   <Updated>Posodobljeno</Updated>
-  <by>od</by>
-  <you>vas</you>
+  <by>-</by>
+  <you>jaz</you>
   </label>
   </UIDocumentNodeList>
   <FileView>

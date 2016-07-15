@@ -145,7 +145,7 @@
     <action>
       <refresh>Osveži</refresh>
       <edit>Urejanje v Brskalniku vsebine</edit>
-      <delete>Zbriši</delete>
+      <delete>Izbriši</delete>
       <publish>Objavi</publish>
     </action>
     <label>

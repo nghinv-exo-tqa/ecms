@@ -15,7 +15,7 @@
         <query-items>Poizvedbe elementov</query-items>
         <schedule-type>Vrsta urnika</schedule-type>
         <remove>Odstrani element</remove>
-        <add>Dodajte element</add>
+        <add>Dodaj element</add>
         <expand>Razširi</expand>
       </label>
     </dialog>
