@@ -17,8 +17,8 @@
     <label>     
       <UITaxonomyManagerTrees>Categorie</UITaxonomyManagerTrees>
       <UIMetadataManager>Vedi Metadati</UIMetadataManager>
-      <UINamespaceManager>Namespaces</UINamespaceManager>
-      <UINodeTypeManager>Node Types</UINodeTypeManager>
+      <UINamespaceManager>Namespace</UINamespaceManager>
+      <UINodeTypeManager>Tipi di nodi</UINodeTypeManager>
       <UITemplatesManager>Documenti</UITemplatesManager>
    <UICLVTemplatesManager>Lista</UICLVTemplatesManager>
       <UIViewManager>Viste</UIViewManager>
@@ -211,7 +211,7 @@
   <UINamespaceList>
     <header>
       <prefix>Prefisso</prefix>
-      <uri>Namespace URI</uri>
+      <uri>URI namespace</uri>
       <action>Azione</action>
     </header>
     <action>
@@ -399,7 +399,7 @@
       <permissions>Permessi</permissions>
       <showHiddenNode>Mostra Nodi Nascosti</showHiddenNode>
       <allowCreateFolders>Consentire la creazione di cartelle:</allowCreateFolders>
-      <Admin>Admin:</Admin>
+      <Admin>Amministratore:</Admin>
       <Categories>Categorie:</Categories>
       <Icons>Icone:</Icons>
       <List>Elenco:</List>
@@ -792,7 +792,7 @@
       <UIActionsTemplateContainer>Azioni</UIActionsTemplateContainer>
       <UIOthersTemplateContainer>Altri</UIOthersTemplateContainer>
   <UIActionScriptContainer>Azione</UIActionScriptContainer>
-  <UIWidgetScriptContainer>Widgets</UIWidgetScriptContainer>
+  <UIWidgetScriptContainer>Widget</UIWidgetScriptContainer>
 <UIInterceptorScriptContainer>Intercettori</UIInterceptorScriptContainer>
 
 <nodeTypeDefinition>Tipo Nodo</nodeTypeDefinition>
@@ -988,12 +988,12 @@
       <publicationPublish>Pubblica</publicationPublish>
 <contentNavigation>Navigazione Contenuti</contentNavigation>
 <addSymLink>Aggiungi Collegamento Simbolico</addSymLink>
-      <checkIn>Check In</checkIn>
-      <checkOut>Check Out</checkOut>
+      <checkIn>Check-in</checkIn>
+      <checkOut>Check-out</checkOut>
       <shareDocuments>Condividi</shareDocuments>
-      <openDocument>Remote Edit</openDocument>
-      <editProperty>Edit Document Properties</editProperty>
-      <uploadNewVersion>Upload a new version</uploadNewVersion>
+      <openDocument>Modifica remota</openDocument>
+      <editProperty>Modifica proprietà documento</editProperty>
+      <uploadNewVersion>Carica una nuova versione</uploadNewVersion>
     </label>
     <action>
       <Save>#{word.save}</Save>      
@@ -1364,7 +1364,7 @@
   <UITaxonomyTreeForm>
     <label>
       <name>Nome</name>
-      <workspace>Workspace</workspace>
+      <workspace>Area di lavoro</workspace>
       <homePath>Percorso Home</homePath>
       <permissions>Permessi</permissions>
     </label>
@@ -1383,7 +1383,7 @@
       <set_property>Imposta Permessi Nodo</set_property>
       <remove>Rimuovi Permessi</remove>
     </label>
-    <title>Add a permission to this node</title>
+    <title>Aggiungi un'autorizzazione a questo nodo</title>
     <action>
       <Close>#{word.close}</Close>
       <Save>Salva</Save>
@@ -1486,7 +1486,7 @@
       <add_node>Modifica</add_node>
       <remove>Rimuovi</remove>
     </label>
-    <title>Add permission to this node</title>
+    <title>Aggiungi autorizzazione a questo nodo</title>
     <action>
       <Close>#{word.close}</Close>
       <Save>#{word.save}</Save>
@@ -2032,7 +2032,7 @@
   -->
   <ECMPhoneFormatValidator>
     <msg>
-      <Invalid>The field '{0}' contains an invalid Phone number. Please enter another value.</Invalid>
+      <Invalid>Il campo '{0}' contiene un numero di telefono non valido. Ti preghiamo di inserire un altro valore.</Invalid>
     </msg>
   </ECMPhoneFormatValidator>
   <!--
