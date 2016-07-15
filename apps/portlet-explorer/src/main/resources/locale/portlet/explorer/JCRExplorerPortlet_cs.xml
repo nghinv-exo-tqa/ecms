@@ -1346,6 +1346,8 @@
   -->
   <UIVersionInfo>
     <tooltip>
+      <version>Verze</version>
+      <baseVersion>Základní verze</baseVersion>
       <addLabel>Přidat popisek</addLabel>
       <removeLable>Odebrat popisek</removeLable>
       <restoreVersion>Obnovit verzi</restoreVersion>
@@ -2436,7 +2438,7 @@
       <Back>Zpět na přejmenování</Back>
       <Keepfile>Ponechat oba soubory</Keepfile>
 <ReadOnly>Open Read-only</ReadOnly>
-<Cancel>Zrušit</Cancel>
+<Cancel>#{word.cancel}</Cancel>
       <KeepBoth>Keep Both</KeepBoth>
       <CreateNewVersion>Create a new version</CreateNewVersion>
     </label>
