@@ -2328,7 +2328,7 @@
   <action>Åtgärd</action>
   </header>
   <tooltip>
-<UnLock>Låsa upp</UnLock>
+<UnLock>Lås upp</UnLock>
   </tooltip>
   <msg>
   <access-denied-exception>Du har inte behörighet att komma åt noden med sökvägen {0}, eller denna nod är borttagen</access-denied-exception>
