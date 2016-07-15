@@ -538,7 +538,7 @@
   </UIDocumentWorkspace>
   <UIDocumentInfo>
     <msg>
-      <access-denied>Acceso denegado. No se puede acceder al nodo '{0}'.</access-denied>
+      <access-denied>Acceso denegado. No puede acceder al nodo '{0}'.</access-denied>
       <null-exception>No se ha encontrado el elemento. Fue removido o cambiado o bien no tiene permiso para acceder a este nodo.</null-exception>
       <confirm-deleteattachment>¿Está seguro de eliminar este archivo de datos adjuntos?</confirm-deleteattachment>
       <confirm-deleteattcomment>¿Está seguro de eliminar este comentario?</confirm-deleteattcomment>
@@ -1346,6 +1346,8 @@
   -->
   <UIVersionInfo>
     <tooltip>
+      <version>Versión</version>
+      <baseVersion>Versión base</baseVersion>
       <addLabel>Añadir etiqueta</addLabel>
       <removeLable>Eliminar la Etiqueta</removeLable>
       <restoreVersion>Restablecer la Versión</restoreVersion>
@@ -1897,7 +1899,7 @@
     <msg>
       <name-exist>Ya existe el nombre de la etiqueta '{0}'.</name-exist>
       <tagName-invalid>El nombre de la etiqueta contiene algunos caracteres no válidos.</tagName-invalid>
-      <tagName-empty-or-invalid>La etiqueta de nombre está vacía o contiene carácteres no válidos.</tagName-empty-or-invalid>
+      <tagName-empty-or-invalid>La etiqueta de nombre está vacía o contiene caracteres no válidos.</tagName-empty-or-invalid>
       <tag-name-empty>El nombre de su etiqueta está vacío</tag-name-empty>
       <tag-name-duplicate>Los nombres de las etiquetas de entrada están duplicados.</tag-name-duplicate>
       <tagName-too-long>Una de las etiquetas introducidas es demasiado larga. El nombre de la etiqueta debe ser menos de 30 caracteres.</tagName-too-long>
