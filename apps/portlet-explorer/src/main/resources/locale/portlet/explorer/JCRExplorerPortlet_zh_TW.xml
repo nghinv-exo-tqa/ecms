@@ -1346,6 +1346,8 @@
   -->
   <UIVersionInfo>
     <tooltip>
+      <version>版本</version>
+      <baseVersion>基本版本</baseVersion>
       <addLabel>增加標籤</addLabel>
       <removeLable>移除標籤</removeLable>
       <restoreVersion>還原的版本</restoreVersion>
