@@ -1346,6 +1346,8 @@
   -->
   <UIVersionInfo>
     <tooltip>
+      <version>Versiune</version>
+      <baseVersion>Versiunea de bază</baseVersion>
       <addLabel>Adaugă eticheta</addLabel>
       <removeLable>Eliminaţi eticheta</removeLable>
       <restoreVersion>Restabilire versiune</restoreVersion>
