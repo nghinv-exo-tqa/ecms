@@ -2328,7 +2328,7 @@
   <action>Action</action>
   </header>
   <tooltip>
-<UnLock>UnLock</UnLock>
+<UnLock>Unlock</UnLock>
   </tooltip>
   <msg>
   <access-denied-exception>You do not have permission to access the node with the path {0}, or this node is deleted.</access-denied-exception>
