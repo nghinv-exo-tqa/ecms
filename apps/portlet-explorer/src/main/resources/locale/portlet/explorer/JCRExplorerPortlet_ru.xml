@@ -1346,6 +1346,8 @@
   -->
   <UIVersionInfo>
     <tooltip>
+      <version>Версия</version>
+      <baseVersion>Базовая версия</baseVersion>
       <addLabel>Добавить метку</addLabel>
       <removeLable>Удалить метку</removeLable>
       <restoreVersion>Восстановить версию</restoreVersion>
