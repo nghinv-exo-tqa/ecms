@@ -1346,6 +1346,8 @@
   -->
   <UIVersionInfo>
     <tooltip>
+      <version>Versie</version>
+      <baseVersion>Basis versie</baseVersion>
       <addLabel>Label toevoegen</addLabel>
       <removeLable>Label verwijdern</removeLable>
       <restoreVersion>Versie herstellen</restoreVersion>

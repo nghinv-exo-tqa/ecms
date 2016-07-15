@@ -2328,7 +2328,7 @@
   <action>Actie</action>
   </header>
   <tooltip>
-<UnLock>vrijmaken</UnLock>
+<UnLock>geselecteerd Forum(s) niet op slot</UnLock>
   </tooltip>
   <msg>
   <access-denied-exception>You don't have permission to access node with path {0} or this node is deleted</access-denied-exception>
